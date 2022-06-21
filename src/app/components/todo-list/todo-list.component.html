@@ -1,0 +1,8 @@
+<p>todo-list works!</p>
+<input type="text" name="todoInput" placeholder="Insert your todo...">
+<ul>
+    <li *ngFor="let todo of todos">
+        <p>{{todo.description}}</p>
+        <p>{{todo.dueDate}}</p>
+    </li>
+</ul>

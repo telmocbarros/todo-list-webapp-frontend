@@ -1,8 +1,9 @@
-<p>todo-list works!</p>
 <input type="text" name="todoInput" placeholder="Insert your todo...">
+<button id="addTodo" (click)="addTodo()">Add</button>
 <ul>
     <li *ngFor="let todo of todos">
         <p>{{todo.description}}</p>
         <p>{{todo.dueDate}}</p>
+        <button id="updateTodo" (click)="updateTodoDescription()">Update</button>
     </li>
 </ul>
